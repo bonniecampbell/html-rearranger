@@ -1,11 +1,21 @@
 var $h1 = $('<h1>');
-var $newLi = $('<li>');
+var $newUl = $('ul');
 
 $h1.html('Below ground veggies');
-$('body').append($h1);
+$('body').append('<h1>Below ground veggies</h1>');
 
-$newLi.html();
-$('ul').prepend($newLi);
+$newUl.html('below')
 
-$('ul li').each(function () {
-}
+
+$h1.html('Above ground veggies');
+$('body').append('<h1>Above ground veggies</h1>');
+
+$newUl.html('above')
+
+
+$('ul li').each(function () {          
+  if$(this).hasClass('below')
+  ('below');
+} else
+  ('above');
+});
